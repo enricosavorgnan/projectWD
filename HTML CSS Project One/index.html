@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Survey Form</title>
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <main>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">A sample for a survey form. Enjoy!</p>
+
+        <form id="survey-form" action="https://thisisyourlink.org" method="post">
+
+            <!-- Infos about you -->
+            <fieldset>
+                <label id="name-label" for="name">Name: 
+                    <input id="name" type="text" placeholder="Enter your name" required />
+                </label>
+                <label id="email-label" for="email">Email: 
+                    <input id="email" type="email" placeholder="Enter your email" required/>
+                </label>
+                <label id="number-label" for="number">Age (optional): 
+                    <input id="number" type="number" placeholder="Enter your age" min="10" max="100"/>
+                </label>
+                <label for="dropdown">What role mostly fit you? 
+                    <select id="dropdown">
+                        <option>(select an option)</option>
+                        <option>Full-time student (>75%)</option>
+                        <option>Part-time student (25-75%)</option>
+                        <option>Full-time worker (<25%)</option>
+                        <option>Prefer not to say</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <!-- Infos about freeCodeCamp -->
+            <fieldset>
+                <legend>Do you like FreeCodeCamp?</legend>
+                <label for="1" ><input class="inline" id="1" type="radio" name="preferences" value="Definetly" checked/>Definetly
+                </label>
+                <label for="2"><input class="inline" id="2" type="radio" name="preferences" value="So-and-so"/>So and so
+                </label>
+                <label for="3"><input class="inline" id="3" type="radio" name="preferences" value="Nope" />Nope
+                </label>
+
+                <legend>Which coding courses did you attend?</legend>
+                <label id="py-label" for="py"> <input class="inline" id="py" type="checkbox"  value="py" /> Python 
+                    </label>
+                <label id="js-label" for="js"> <input class="inline" id="js" type="checkbox"  value="js" /> JavaScript
+                </label>
+                <label id="cpp-label" for="cpp"> <input class="inline" id="cpp" type="checkbox" value="cpp" /> C++
+                </label>
+            </fieldset>
+
+            <!-- Suggestions section-->
+            <fieldset>
+                <label id="advice-label" for="advice">Do you have any advice for us? 
+                    <textarea id="advice" placeholder="Enter your suggestions" rows="5" cols="40"></textarea>
+                </label>
+            </fieldset>
+
+            <!-- Submit button-->
+            <fieldset>
+                <input id="submit" type="submit" value="Submit" />
+            </fieldset>
+
+        </form>
+    </main>
+</html>
